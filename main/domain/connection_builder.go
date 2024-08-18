@@ -23,3 +23,7 @@ func (cb *ConnectionBuilder) SetID(id string) {
 func (cb *ConnectionBuilder) SetType(t Type) {
 	cb.Type = t
 }
+
+func (cb *ConnectionBuilder) SetName(name string) {
+	cb.BaseConnection.Name = name
+}
