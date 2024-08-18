@@ -13,6 +13,7 @@ type BaseConnection struct {
 }
 
 func (bc *BaseConnection) GetID() string {
+	bc.ID = ""
 	return bc.ID
 }
 
