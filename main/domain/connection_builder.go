@@ -15,3 +15,7 @@ const (
 func NewConnectionBuilder(t Type) *ConnectionBuilder {
 	return &ConnectionBuilder{Type: t, BaseConnection: &BaseConnection{}}
 }
+
+func (cb *ConnectionBuilder) SetID(id string) {
+	cb.BaseConnection.ID = id
+}
