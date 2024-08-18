@@ -19,3 +19,7 @@ func NewConnectionBuilder(t Type) *ConnectionBuilder {
 func (cb *ConnectionBuilder) SetID(id string) {
 	cb.BaseConnection.ID = id
 }
+
+func (cb *ConnectionBuilder) SetType(t Type) {
+	cb.Type = t
+}
